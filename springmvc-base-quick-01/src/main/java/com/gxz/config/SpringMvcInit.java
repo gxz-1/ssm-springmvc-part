@@ -2,7 +2,8 @@ package com.gxz.config;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
-//代替web.xml文件:可以被web项目加载,会初始化ioc容器,会设置dispatcherServlet的地址
+//需要继承下面的类，从而代替web.xml文件
+// 作用：被web项目加载,会初始化ioc容器,会设置dispatcherServlet的地址
 public class SpringMvcInit extends AbstractAnnotationConfigDispatcherServletInitializer {
     //用于创建service和mapper层的ioc容器
     @Override
