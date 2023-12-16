@@ -8,9 +8,9 @@ import org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandl
 import org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping;
 
 @EnableWebMvc
-//1.添加HandlerMapping 2.添加HandlerAdapter 3.配置json数据转换器
+//作用：1.添加HandlerMapping 2.添加HandlerAdapter 3.配置json数据转换器
 @Configuration
-@ComponentScan("com.gxz.input")
+@ComponentScan({"com.gxz.param","com.gxz.data"})
 public class IocConfig {
 //    @Bean
 //    public RequestMappingHandlerMapping handlerMapping(){
