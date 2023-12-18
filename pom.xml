@@ -13,6 +13,7 @@
         <module>springmvc-base-input-02</module>
         <module>springmvc-base-input-02</module>
         <module>springmvc-base-input-02</module>
+        <module>springmvc-base-output-03</module>
     </modules>
 
     <properties>
@@ -53,6 +54,12 @@
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
             <version>2.15.0</version>
+        </dependency>
+        <!-- jsp需要依赖! jstl-->
+        <dependency>
+            <groupId>jakarta.servlet.jsp.jstl</groupId>
+            <artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
+            <version>3.0.0</version>
         </dependency>
     </dependencies>
 
