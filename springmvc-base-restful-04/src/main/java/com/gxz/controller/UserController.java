@@ -26,7 +26,7 @@ public class UserController {
     }
 
     //查找user根据id
-    @RequestMapping(name = "{id}",method = RequestMethod.GET)
+    @RequestMapping(value = "{id}",method = RequestMethod.GET)
     public User detail(@PathVariable Integer id){//接收路径参数 get方式
         return null;
     }
@@ -38,13 +38,13 @@ public class UserController {
     }
 
     //删除根据id
-    @RequestMapping(name = "{id}",method = RequestMethod.DELETE)
+    @RequestMapping(value = "{id}",method = RequestMethod.DELETE)
     public Boolean delete(@PathVariable Integer id){
         return true;
     }
 
     //模糊查找user集合，根据关键字keyword
-    @RequestMapping(name = "search",method = RequestMethod.GET)
+    @RequestMapping(value = "search",method = RequestMethod.GET)
     public List<User> search(String keyword,
                              @RequestParam(required = false,defaultValue = "1")int page,
                              @RequestParam(required = false,defaultValue = "10")int size){
